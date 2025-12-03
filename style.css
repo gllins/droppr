@@ -1,0 +1,164 @@
+/* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Base */
+body {
+  background-color: #15202b;
+  color: #e7e9ea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  margin: 0;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  font-size: 23px;
+  color: #e7e9ea;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 450px;
+}
+
+.logo {
+  margin-bottom: 30px;
+  font-size: 40px;
+  color: #015f4b;
+}
+
+/* Formulários */
+form {
+  background-color: #192734;
+  border-radius: 16px;
+  padding: 30px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #8b98a5;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 16px;
+  border: 1px solid #38444d;
+  border-radius: 8px;
+  background-color: #253341;
+  color: #e7e9ea;
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #015f4b;
+}
+
+input::placeholder {
+  color: #8b98a5;
+}
+
+input[type="submit"],
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #fff;
+  color: #015f4b;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #015f4b;
+  color: #fff;
+}
+
+/* Links extras / botões estilizados */
+.extra-links,
+.login-link {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.extra-links a,
+.login-link a {
+  color: #015f4b;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+  padding: 10px 20px;
+  border: 1px solid #015f4b;
+  border-radius: 50px;
+  display: inline-block;
+  margin: 5px;
+}
+
+.extra-links a:hover,
+.login-link a:hover {
+  background-color: #015f4b;
+  color: #fff;
+}
+
+/* Botão/Link genérico (ex: "Cadastrar") */
+.acao {
+  display: block;
+  width: 200px;
+  text-align: center;
+  background: #fff;
+  color: #015f4b;
+  padding: 12px 0;
+  border-radius: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+.acao:hover {
+  background: #015f4b;
+  color: #fff;
+}
+
+/* Mensagens de feedback */
+.mensagem {
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+.mensagem:not(:empty) {
+  background-color: #015f4b33;
+  border: 1px solid #015f4b;
+}
+.sucesso {
+  color: #00ba7c;
+}
+.erro {
+  color: #f91880;
+}
