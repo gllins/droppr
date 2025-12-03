@@ -42,7 +42,7 @@ O Droppr permite que usuários criem contas, façam login, publiquem mensagens c
 6. Abra *http://localhost/droppr*.
 
 ## 👨‍💻 Autor
-Desemvolvido por **Maria Giulia Lins**
+Desemvolvido por **Maria Giulia Lins**;
 Projeto iniciado na disciplina **WEB II** e posteriormente ampliado para portifólio.
 
 ## 📄 Licença
