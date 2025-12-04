@@ -9,7 +9,7 @@ if (!isset($_GET['mensagem_id'])) {
 $post_id = intval($_GET['mensagem_id']);
 $usuario_id = $_SESSION['usuario_id'] ?? null;
 
-// BUSCAR POST
+// busca o post
 $stmt = $conn->prepare("SELECT * FROM mensagens WHERE id = ?");
 $stmt->bind_param("i", $post_id);
 $stmt->execute();
@@ -19,12 +19,12 @@ if (!$post) {
     die("Post não encontrado.");
 }
 
-// VERIFICA SE O POST É DO USUÁRIO LOGADO
+// verifica login do user
 if ($usuario_id != $post['usuario_id']) {
     die("Você não tem permissão para editar este post.");
 }
 
-// SALVAR ALTERAÇÃO
+// salva alteração
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $nova_mensagem = trim($_POST['mensagem']);
 
@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
         $stmt->execute();
     }
 
-    header("Location: comentarios.php?mensagem_id=$post_id");
+    header("Location: boas_vindas.php?mensagem_id=$post_id");
     exit;
 }
 ?>
@@ -128,7 +128,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
         <button type="submit">Salvar Alterações</button>
     </form>
 
-    <a href="boas_vindas.php?mensagem_id=<?= $post_id; ?>">Voltar</a>
+   <a href="boas_vindas.php">Voltar</a>
 </div>
 </body>
 </html>

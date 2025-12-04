@@ -7,7 +7,7 @@ $conn = null;
 // processar o formulário apenas se for método POST
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $host = 'localhost';
-    $db = 'escola';
+    $db = 'droppr';
     $user = 'root';
     $pass = '';
 
@@ -20,8 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = trim($_POST['email']);
     $senha = $_POST['senha'];
 
-  $dominioAluno = "@aluno.colegiodom.com.br";
-  $dominioProf  = "@prof.colegiodom.com.br";
+
 
 // validação simples de cadastro
 if (empty($nome) || empty($email) || empty($senha)) {

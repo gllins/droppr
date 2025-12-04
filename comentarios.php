@@ -9,7 +9,7 @@ if (!isset($_GET['mensagem_id'])) {
 $mensagem_id = intval($_GET['mensagem_id']);
 $usuario_id = $_SESSION['usuario_id'] ?? null;
 
-// BUSCA MENSAGEM ORIGINAL
+// busca msg original
 $stmt = $conn->prepare("SELECT m.*, u.nome, u.perfil_img 
                         FROM mensagens m 
                         JOIN usuario u ON u.id = m.usuario_id 
@@ -22,7 +22,7 @@ if (!$post) {
     die("Post não encontrado.");
 }
 
-// NOVO COMENTÁRIO
+// novo comentario
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $comentario = trim($_POST['comentario']);
 
@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     exit;
 }
 
-// BUSCAR COMENTÁRIOS
+// busca comentarios
 $stmt = $conn->prepare("SELECT c.*, u.nome, u.perfil_img 
                         FROM comentarios c 
                         JOIN usuario u ON u.id = c.usuario_id 

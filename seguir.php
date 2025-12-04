@@ -2,7 +2,7 @@
 session_start();
 // Conexão com o banco
 $host = 'localhost';
-$db = 'escola';
+$db = 'droppr';
 $user = 'root';
 $pass = '';
 $conn = new mysqli($host, $user, $pass, $db);
