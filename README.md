@@ -6,13 +6,13 @@ O objetivo é demonstrar habilidades em backend, CRUD completo, autenticação d
 
 ---
 
-## 🔍 Sobre o Projeto
+## Sobre o Projeto
 O Droppr permite que usuários criem contas, façam login, publiquem mensagens curtas (“drops”), sigam outros usuários, curtam posts, comentem e interajam dentro de um feed atualizado.  
 É um projeto focado em lógica, organização e fluxo completo de uma aplicação web real.
 
 ---
 
-## ✨ Funcionalidades
+## Funcionalidades
 - Cadastro e login de usuários  
 - Edição de perfil  
 - Criar e excluir posts (drops)  
@@ -24,7 +24,7 @@ O Droppr permite que usuários criem contas, façam login, publiquem mensagens c
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 - **PHP**  
 - **MySQL**  
 - **HTML5**  
@@ -33,7 +33,7 @@ O Droppr permite que usuários criem contas, façam login, publiquem mensagens c
 
 ---
 
-## ⚙️ Como Executar o Projeto
+## Como Executar o Projeto
 1. Coloque os arquivos do projeto em um servidor local (WAMP, XAMPP, Laragon etc.).
 2. Crie o banco *droppr*.
 3. Importe o arquivo *droppr.sql* (UTF-8) via phpMyAdmin.
@@ -41,11 +41,11 @@ O Droppr permite que usuários criem contas, façam login, publiquem mensagens c
 5. Verifique se a pasta *uploads/* tem permissão de escrita.
 6. Abra *http://localhost/droppr*.
 
-## 👨‍💻 Autor
+## Autor
 Desemvolvido por **Maria Giulia Lins**;
 Projeto iniciado na disciplina **WEB II** e posteriormente ampliado para portifólio.
 
-## 📄 Licença
+## Licença
 Este projeto está sob a licença MIT.
 
 
